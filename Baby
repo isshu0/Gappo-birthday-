@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Gappo Muskaniya!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7e6f7;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #ff66b2;
+            font-size: 36px;
+        }
+        .question {
+            margin: 10px 0;
+        }
+        #message {
+            font-size: 1.5em;
+            color: #ff3399;
+            display: none;
+        }
+        #gifts, #quotes {
+            display: none;
+        }
+        .gif {
+            width: 100px;
+            height: 100px;
+        }
+        .quote {
+            font-style: italic;
+            margin-top: 20px;
+        }
+        .personal-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .center {
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Happy Birthday, Gappo Muskaniya!</h1>
+    <p>Let's answer some questions to make this birthday even more special!</p>
+
+    <!-- Questions Section -->
+    <div id="quiz">
+        <div class="question">
+            <label for="question1">What is your favorite color?</label>
+            <input type="text" id="question1">
+        </div>
+        <div class="question">
+            <label for="question2">What is your favorite food?</label>
+            <input type="text" id="question2">
+        </div>
+        <div class="question">
+            <label for="question3">What is your favorite memory with me?</label>
+            <input type="text" id="question3">
+        </div>
+        <button onclick="endQuiz()">Finish Quiz</button>
+    </div>
+
+    <!-- Message Section -->
+    <div id="message">
+        <p>Happy Birthday dear Gappo Muskaniya, meri jaan! Tumhara din bahut accha jaye 💗😘</p>
+        <div id="gifts">
+            <img src="https://media.giphy.com/media/d2lcHJTG5Tscg/giphy.gif" alt="Birthday GIF" class="gif">
+            <img src="https://media.giphy.com/media/1YweoAl3IE1tG/giphy.gif" alt="Birthday GIF" class="gif">
+        </div>
+
+        <!-- Personal Images of You and Gappo -->
+        <div class="center">
+            <img src="your-image-path.jpg" alt="Your Image" class="personal-image">
+            <img src="gappo-image-path.jpg" alt="Gappo Muskaniya" class="personal-image">
+        </div>
+
+        <div id="quotes">
+            <p class="quote">"You are my sun, my moon, and all of my stars." — E.E. Cummings</p>
+            <p class="quote">"To love and be loved is to feel the sun from both sides." — David Viscott</p>
+        </div>
+        <audio controls autoplay>
+            <source src="your-music-path/meri-jaan.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <script>
+        function endQuiz() {
+            // Hide the quiz and show the message and gifts
+            document.getElementById('quiz').style.display = 'none';
+            document.getElementById('message').style.display = 'block';
+            document.getElementById('gifts').style.display = 'block';
+            document.getElementById('quotes').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
